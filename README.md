@@ -6,4 +6,4 @@
 
 ## Resultado:
 
-![Grafico](Grafico_resultado.png)
+![Grafico](grafico_resultado.png)
