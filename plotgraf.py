@@ -6,10 +6,11 @@ def funcaogravidade(alt):
     return math.sqrt((2*alt)/9.81)
 
 def grafico(x,y,erro,g):
-    # grafico
+    # plotando dados experimentais
     plt.errorbar(x, y, yerr=erro, fmt="ro", label="Dados")
     xx = np.linspace(0.5, 2.5, 1000)
     yy = np.power(2 * xx, 0.5) * np.power(1 / g, 0.5)
+    # plot curva tempo com g experimental resultante
     plt.plot(xx, yy, label="g={:.2f}".format(g))
     # plot curva tempo com g=9.81
     alt = np.linspace(0.5, 2.5, 1000)
